@@ -2,7 +2,13 @@
   "name": "@ng17-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "quiz": "nx run quiz:serve",
+    "lint:quiz": "eslint \"apps/quiz/**/*.ts\" --cache",
+    "test:quiz": "nx test quiz --coverage",
+    "survey": "nx run quiz:survey",
+    "shell": "nx run shell:shell"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.0.0",
